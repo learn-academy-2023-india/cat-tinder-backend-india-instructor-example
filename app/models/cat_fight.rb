@@ -1,0 +1,2 @@
+class CatFight < ApplicationRecord
+end
