@@ -1,0 +1,2 @@
+class CatFightsController < ApplicationController
+end
