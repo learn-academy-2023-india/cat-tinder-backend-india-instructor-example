@@ -25,11 +25,11 @@
 [Cat Tinder API Intro](https://github.com/learn-academy-2023-india/syllabus/blob/main/cat-tinder/backend/api-intro.md)  
 
 #### As a developer, I can create a RSpec testing suite in my Rails application.
-- rspec gem and install added on the main branch
+- `$ rspec gem and install added on the main branch`
 
 #### As a developer, I can add a resource for Cat that has a name, an age, what the cat enjoys doing, and an image.
-- rails g resource CatFight name:string age:integer enjoys:text image:text
-- rails db:migrate
+- `$ rails g resource CatFight name:string age:integer enjoys:text image:text`
+- `$ rails db:migrate`
 
 #### As a developer, I can add cat seeds to the `seeds.rb` file.
 
