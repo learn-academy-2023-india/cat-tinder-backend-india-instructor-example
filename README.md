@@ -25,11 +25,11 @@
 [Cat Tinder API Intro](https://github.com/learn-academy-2023-india/syllabus/blob/main/cat-tinder/backend/api-intro.md)  
 
 #### As a developer, I can create a RSpec testing suite in my Rails application.
-- `$ rspec gem and install added on the main branch`
+- `$ rspec gem and install added on the main branch`  
 
 #### As a developer, I can add a resource for Cat that has a name, an age, what the cat enjoys doing, and an image.
-- `$ rails g resource CatFight name:string age:integer enjoys:text image:text`
-- `$ rails db:migrate`
+- `$ rails g resource CatFight name:string age:integer enjoys:text image:text`  
+- `$ rails db:migrate`  
 
 #### As a developer, I can add cat seeds to the `seeds.rb` file.
 
@@ -84,7 +84,7 @@ creating cat {:name=>"The Litterbox Legend", :age=>5, :enjoys=>"Sitting on compu
 ## CORS stands for Cross-Origin Resource Sharing  
 [CORS](https://github.com/learn-academy-2023-india/syllabus/blob/main/cat-tinder/backend/api-cors.md)  
 a) Disable the authenticity token  
-b) Add the racks-cors gem to the Gemfile and run `$ bundle`
+b) Add the racks-cors gem to the Gemfile and run `$ bundle`  
 c) Create a cors.rb file and add code indicated in the syllabus. This code allows an external application to perform CRUD actions by referencing the applicable http verbs.  
 
 ## Endpoints
@@ -117,9 +117,9 @@ a) Write a failing test
     end
   end
 ```
-b) See it fail: `$ rspec spec/requests/cat_fights_spec.rb` 
-c) Add the code to the test pass
-d) See it pass: `$ rspec spec/requests/cat_fights_spec.rb`
+b) See it fail: `$ rspec spec/requests/cat_fights_spec.rb`   
+c) Add the code to the test pass  
+d) See it pass: `$ rspec spec/requests/cat_fights_spec.rb`  
 
 ### create
 ```rb
