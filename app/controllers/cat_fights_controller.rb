@@ -6,22 +6,24 @@ class CatFightsController < ApplicationController
   end
 
   def create
-    # Create a new cat
     cat = CatFight.create(cat_params)
     render json: cat
   end
 
   def update
+    cat = CatFight.find(params[:id])
+    cat.update(cat_params)
+    render json: cat
   end
 
   def destroy
+    cat = CatFight.find(params[:id])
+    cat.destroy
   end
 
-  # Handle strong parameters, so we are secure
   private
   def cat_params
     params.require(:cat_fight).permit(:name, :age, :enjoys, :image)
   end
-
 
 end
