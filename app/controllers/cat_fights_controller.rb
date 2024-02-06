@@ -7,13 +7,21 @@ class CatFightsController < ApplicationController
 
   def create
     cat = CatFight.create(cat_params)
-    render json: cat
+    if cat.valid?
+      render json: cat
+    else
+      render json: cat.errors, status: 422
+    end
   end
 
   def update
     cat = CatFight.find(params[:id])
     cat.update(cat_params)
-    render json: cat
+    if cat.valid?
+      render json: cat
+    else
+      render json: cat.errors, status: 422
+    end
   end
 
   def destroy
